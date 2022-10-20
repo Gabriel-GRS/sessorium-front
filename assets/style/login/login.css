@@ -1,0 +1,56 @@
+.container__login {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo__sessorium {
+    height: 280px;
+    width: 270px;
+}
+
+
+.title__item__input {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    text-align: left;
+    margin: 2px;
+    color: rgb(65, 182, 182);
+}
+
+.input__item {
+    margin-top: 2px;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 6px;
+    padding-left: 12px;
+    width: 270px;
+    height: 40px;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.input__button {
+    margin-top: 4px;
+    height: 34px;
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+    color: aliceblue;
+    font-weight: 700;
+    background-color: rgb(65, 182, 182);
+}
+
+.checkbox__input {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    
+}

@@ -18,8 +18,3 @@
 1) Clone o respositório;
 2) Entre no pasta "pages";
 3) Abra o arquivo "login.html" com o navegador.
-
-## Acessar na Web
-
-* Basta acessar o <a href="">link</a>
-

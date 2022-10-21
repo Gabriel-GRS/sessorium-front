@@ -20,7 +20,7 @@
     font-weight: 700;
     font-family: 'Arial';
     font-size: 14px;
-    color:rgb(65, 182, 182);
+    color: rgb(65, 182, 182);
 }
 
 .menu__lateral {
@@ -57,10 +57,10 @@
     margin: auto;
     margin-top: 18px;
     border-collapse: collapse;
-    border: 1px solid rgba(65, 182, 182,);
+    border: 1px solid rgba(65, 182, 182, );
     width: 1100px;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.16);
-}   
+}
 
 .cabecalho__tabela {
     background-color: rgb(65, 182, 182);
@@ -87,7 +87,7 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 12px;
-    
+
 }
 
 .tabela-linha__item-status {

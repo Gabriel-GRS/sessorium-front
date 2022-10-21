@@ -1,3 +1,5 @@
+/* Início estilo cabeçalho */
+
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -23,6 +25,9 @@
     color: rgb(65, 182, 182);
 }
 
+/* Fim estilo cabeçalho */
+
+/* Início estilo Menu Lateral */
 .menu__lateral {
     display: flex;
     position: absolute;
@@ -53,6 +58,9 @@
     cursor: pointer;
 }
 
+/* Fim estilo Menu Lateral */
+
+
 .secao {
     display: flex;
     flex-direction: column;
@@ -62,15 +70,12 @@
     margin-left: 100px;
 }
 
-.secao-videos {
-    grid-area: secao-videos;
-}
-
 .titulo-secao {
     font-size: 1.2rem;
     font-weight: 700;
 }
 
+/* Início estilo seção dos Cards de Turmas */
 .cartao {
     width: 60%;
     border-radius: 15px;
@@ -141,3 +146,5 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(46, 224, 67);
 }
+
+/* Fim estilo seção dos Cards de Turmas */

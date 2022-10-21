@@ -1,3 +1,4 @@
+/* Início estilo cabeçalho */
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -22,7 +23,9 @@
     font-size: 14px;
     color: rgb(65, 182, 182);
 }
+/* Fim estilo cabeçalho */
 
+/* Início estilo Menu Lateral */
 .menu__lateral {
     display: flex;
     position: absolute;
@@ -52,7 +55,10 @@
     transition: .3s;
     cursor: pointer;
 }
+/* Fim estilo Menu Lateral */
 
+
+/* Início estilo Tabela de Notas */
 .tabela {
     margin: auto;
     margin-top: 18px;
@@ -60,6 +66,15 @@
     border: 1px solid rgba(65, 182, 182, );
     width: 1100px;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.16);
+}
+
+.container__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(65, 182, 182);
 }
 
 .cabecalho__tabela {
@@ -97,12 +112,4 @@
     padding: 12px;
     color: rgb(49, 214, 49);
 }
-
-.container__title {
-    display: flex;
-    justify-content: center;
-    margin-top: 12px;
-    font-size: 32px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(65, 182, 182);
-}
+/* Fim estilo Tabela de Notas */

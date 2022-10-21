@@ -1,3 +1,4 @@
+/* Início estilo Form Registro */
 .container__login {
     display: flex;
     justify-content: center;
@@ -57,3 +58,5 @@
 .btn__registrar {
     margin: 14px;
 }
+
+/* Fim estilo Form Registro */

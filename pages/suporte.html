@@ -20,15 +20,34 @@
                 <a class="menu-lateral__link" href="./notas.html">Notas</a>
             </li>
             <li>
-                <a class="menu-lateral__link" href="">Sobre Nós</a>
+                <a class="menu-lateral__link" href="./suporte.html">Fale Conosco</a>
             </li>
             <li>
-                <a class="menu-lateral__link" href="./suporte.html">Fale Conosco</a>
+                <a class="menu-lateral__link" href="../index.html">Sair</a>
             </li>
         </ul>
     </nav>
     <main>
-
+        <section class="container__form">
+            <form class="form" action="./home.html">
+                <h1 class="form__title">Fale Conosco</h1>
+                <p class="title__item__input">Seu nome</p>
+                <input class="input__item" placeholder="Insira o seu nome" type="text" required>
+                <p class="title__item__input">E-mail</p>
+                <input class="input__item" placeholder="Insira seu email" type="email" required>
+                <p class="title__item__input">Qual o tipo do problema?</p>
+                <select class="input__item__select" name="Tipo do problema" id="">
+                    <option value="">Consultar Notas</option>
+                    <option value="">Encontrar Turmas</option>
+                    <option value="">Consultar Frequência</option>
+                    <option value="">Usabilidade do Sistema</option>
+                </select>
+                <p class="title__item__input">Descreva o Problema</p>
+                <input class="input__item" type="text" placeholder="Qual problema você está tendo?" required>
+                </div>
+                <input class="input__button" type="submit" value="Enviar">
+            </form>
+        </section>
     </main>
 </body>
 </html>

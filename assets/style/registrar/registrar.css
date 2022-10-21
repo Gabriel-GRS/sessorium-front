@@ -38,7 +38,7 @@
 }
 
 .input__button {
-    margin-top: 4px;
+    margin-top: 14px;
     height: 34px;
     border-radius: 15px;
     border: none;
@@ -53,7 +53,6 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
-
 
 .btn__registrar {
     margin: 14px;

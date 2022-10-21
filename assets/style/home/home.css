@@ -101,6 +101,8 @@
     overflow: hidden;
     background-color: aliceblue;
     margin-left: 20px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.16);
+
 }
 
 .cartao__conteudo {

@@ -20,7 +20,7 @@
     font-weight: 700;
     font-family: 'Arial';
     font-size: 14px;
-    color:rgb(65, 182, 182);
+    color: rgb(65, 182, 182);
 }
 
 .menu__lateral {
@@ -51,50 +51,4 @@
     border-left: 8px solid rgb(65, 182, 182);
     transition: .3s;
     cursor: pointer;
-}
-
-.tabela {
-    margin: auto;
-    margin-top: 18px;
-    border-collapse: collapse;
-    border: 1px solid rgba(65, 182, 182,);
-    width: 1100px;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.16);
-}   
-
-.cabecalho__tabela {
-    background-color: rgb(65, 182, 182);
-    height: 40px;
-}
-
-.cabecalho-tabela__item {
-    color: aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
-    padding: 12px;
-    text-align: center;
-    width: 120px;
-}
-
-.tabela__linha {
-    height: 40px;
-    width: 120px;
-    background-color: aliceblue;
-}
-
-.tabela-linha__item {
-    border-bottom: 1px solid rgba(65, 182, 182, 0.20);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 12px;
-    
-}
-
-.container__title {
-    display: flex;
-    justify-content: center;
-    margin-top: 12px;
-    font-size: 32px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(65, 182, 182);
 }

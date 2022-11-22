@@ -6,6 +6,9 @@
     <title>Sessorium - Home</title>
     <link rel="stylesheet" href="../assets/style/home/home.css">
     <link rel="stylesheet" href="../assets/style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="shortcut icon" href="../assets/imgs/sessorium-icon.png" type="image/x-icon">
 
 </head>
@@ -13,14 +16,19 @@
 <body>
     <!-- Início Cabeçalho -->
     <header class="cabecalho">
+        <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
         <a href="./home.html" class="cabecalho__title">Sessorium</a>
         <p class="cabecalho__usuario">Seja Bem-vindo, Gabriel Soares</p>
     </header>
     <!-- Fim Cabeçalho -->
 
     <!-- Início Menu Lateral -->
-    <nav class="menu__lateral">
+    <aside class="menu__lateral">
         <ul>
+            <li>
+                <a class="menu-lateral__link menu-lateral__link--inicio menu-lateral--ativo"
+                    href="./home.html">Início</a>
+            </li>
             <li>
                 <a class="menu-lateral__link" href="./turmas.html">Turmas</a>
             </li>
@@ -28,15 +36,15 @@
                 <a class="menu-lateral__link" href="./notas.html">Notas</a>
             </li>
             <li>
-                <a class="menu-lateral__link" href="./fale-conosco.html">Fale Conosco</a>
+                <a class="menu-lateral__link  menu-lateral__link--suporte" href="./fale-conosco.html">Fale Conosco</a>
             </li>
             <li>
                 <a class="menu-lateral__link" href="./login.html">Sair</a>
             </li>
         </ul>
-    </nav>
+    </aside>
     <!-- Fim Menu Lateral -->
-    
+
     <!-- Início Conteúdo Principal -->
     <main>
         <div class="conteudo__principal">
@@ -90,6 +98,8 @@
         <!-- Fim Cards -->
         <!-- Início Conteúdo Principal -->
     </main>
+    <script src="../index.js"></script>
+    <script src="https://kit.fontawesome.com/65f22fe718.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,31 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-bt">
 
 <head>
     <meta charset="UTF-8">
-    <title>Sessorium - Registrar-se</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/style/registrar/registrar.css">
-    <link rel="shortcut icon" href="../assets/imgs/sessorium-icon.png" type="image/x-icon">
+    <title>Sessorium - Login</title>
 </head>
 
 <body>
-    <!-- Início Conteúdo Principal -->
-    <main class="container__login">
-        <!-- Início Formulário de Registro -->
-        <form class="form" action="./login.html">
-            <img class="logo__sessorium" src="../assets/imgs/Sessorium.png" alt="Logo do sistema Sessorium">
-            <h1 class="title__item__input">Registrar-se</h1>
-            <p class="title__item__input">Usuário</p>
-            <input class="input__item" placeholder="Insira seu e-mail" type="email" required>
-            <p class="title__item__input">Senha</p>
-            <input class="input__item" placeholder="Insira sua senha" type="password" required>
-            <p class="title__item__input">Confirme Sua Senha</p>
-            <input class="input__item" placeholder="Insira sua senha" type="password" required>
-            <input class="input__button" type="submit" value="Registrar">
-        </form>
-        <!-- Fim Formulário de Registro -->
+    <main class="container">
+        <section class="img-container">
+            <div>
+                <img src="../assets/imgs/Sessorium.png" alt="">
+            </div>
+        </section>
+
+        <section class="login-container">
+            <main class="main-container">
+                <header class="header-container">
+                    <p class="login-text">Faça o seu cadastro e seja bem-vindo</p>
+                    <h1 class="login-title">Faça o cadastro da sua conta</h1>
+                </header>
+
+                <section class="login-form">
+                    <label class="form-text" for="email">E-mail</label>
+                    <input type="text" placeholder="sessorium@gmail.com" name="email" id="email" required>
+                    <label class="form-text" for="password">Senha</label>
+                    <input type="password" placeholder="*********" name="psw" id="psw" required>
+                    <label class="form-text" for="password">Confirme Sua Senha</label>
+                    <input type="password" placeholder="*********" name="psw" id="psw" required>
+                </section>
+                <section class="btn-container">
+                    <div>
+                        <a class="btn-cadastrar" href="./login.html">
+                            Cadastrar
+                        </a>
+                    </div>
+                    </a>
+                </section>
+            </main>
+        </section>
     </main>
-    <!-- Fim Conteúdo Principal -->
 </body>
 
 </html>

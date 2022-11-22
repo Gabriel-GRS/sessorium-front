@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sessorium - Admin</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../assets/style/reset.css">
+		<link rel="stylesheet" type="text/css" href="../assets/style/admin/admin.css">
+
+	</head>
+	<body>
+		<header class="cabecalho">
+			<button class="cabecalho__menu" aria-label="Menu"><i></i></button>
+			<a href="./home.html" class="cabecalho__title">Sessorium</a>
+			<p class="cabecalho__usuario">Seja Bem-vindo, Gabriel Soares</p>
+		</header>
+		<aside class="menu__lateral">
+			<ul>
+				<li>
+					<a class="menu-lateral__link menu-lateral__link--inicio menu-lateral--ativo"
+						href="./home.html">Início</a>
+				</li>
+				<li>
+					<a class="menu-lateral__link" href="./turmas.html">Turmas</a>
+				</li>
+				<li>
+					<a class="menu-lateral__link" href="./notas.html">Notas</a>
+				</li>
+				<li>
+					<a class="menu-lateral__link  menu-lateral__link--suporte" href="./fale-conosco.html">Fale Conosco</a>
+				</li>
+				<li>
+					<a class="menu-lateral__link" href="./admin.html">Painel Admin</a>
+				</li>
+				<li>
+					<a class="menu-lateral__link" href="./login.html">Sair</a>
+				</li>
+			</ul>
+		</aside>
+		<main>
+			<section class="container">
+				<h2>Painel Admin</h2>
+				<table>
+					<thead class="cabecalho__tabela">
+						<tr>
+							<th>Nome</th>
+							<th>Matrícula</th>
+							<th>CPF</th>
+							<th>Telefone</th>
+							<th>E-mail</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-pacientes">
+						<tr class="paciente" id="primeiro-paciente">
+							<td class="info-nome">Paulo</td>
+							<td class="info-peso">200220222</td>
+							<td class="info-altura">123.456.789-10</td>
+							<td class="info-gordura">(79)</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente" >
+							<td class="info-nome">João</td>
+							<td class="info-peso">200220222</td>
+							<td class="info-altura">123.456.789-10</td>
+							<td class="info-gordura">(79)</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente" >
+							<td class="info-nome">Erica</td>
+							<td class="info-peso">200220222</td>
+							<td class="info-altura">123.456.789-10</td>
+							<td class="info-gordura">(79)</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente">
+							<td class="info-nome">Douglas</td>
+							<td class="info-peso">200220222</td>
+							<td class="info-altura">123.456.789-10</td>
+							<td class="info-gordura">(79)</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<tr class="paciente" >
+							<td class="info-nome">Tatiana</td>
+							<td class="info-peso">200220222</td>
+							<td class="info-altura">123.456.789-10</td>
+							<td class="info-gordura">(79)</td>
+							<td class="info-imc">0</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Adicionar Novo Aluno</h2>
+			<ul id="mensagens-erro"></ul>
+		    <form id="form-adiciona">
+		        <div class="">
+		            <label for="nome">Nome:</label>
+		            <input id="nome" name="nome" type="text" placeholder="digite o nome do seu aluno" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="peso">Matrícula:</label>
+		            <input id="peso" name="peso" type="text" placeholder="digite a matrícula do seu aluno" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="altura">CPF:</label>
+		            <input id="altura" name="altura" type="text" placeholder="digite o cpf do seu aluno" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="gordura">Telefone:</label>
+		            <input id="gordura" type="text" placeholder="digite o telefone do seu aluno" class="campo campo-medio">
+		        </div>
+
+		        <button id="adicionar-paciente" class="botao bto-principal">Adicionar e Limpar</button>
+		    </form>
+		</section>
+
+		<script src="../js/admin/form.js" ></script>
+	</body>
+</html>

@@ -6,7 +6,7 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="../assets/style/reset.css">
 		<link rel="stylesheet" type="text/css" href="../assets/style/admin/admin.css">
-
+		<link rel="shortcut icon" href="../assets/imgs/sessorium-icon.png" type="image/x-icon">
 	</head>
 	<body>
 		<header class="cabecalho">
@@ -50,44 +50,44 @@
 							<th>E-mail</th>
 						</tr>
 					</thead>
-					<tbody id="tabela-pacientes">
-						<tr class="paciente" id="primeiro-paciente">
+					<tbody id="tabela-alunos">
+						<tr class="aluno" id="primeiro-paciente">
 							<td class="info-nome">Paulo</td>
-							<td class="info-peso">200220222</td>
-							<td class="info-altura">123.456.789-10</td>
-							<td class="info-gordura">(79)</td>
-							<td class="info-imc">0</td>
+							<td class="info-matricula">200220222</td>
+							<td class="info-cpf">123.456.789-10</td>
+							<td class="info-telefone">80028922</td>
+							<td class="info-email">paulo@email.org</td>
 						</tr>
 
-						<tr class="paciente" >
+						<tr class="aluno" >
 							<td class="info-nome">João</td>
-							<td class="info-peso">200220222</td>
-							<td class="info-altura">123.456.789-10</td>
-							<td class="info-gordura">(79)</td>
-							<td class="info-imc">0</td>
+							<td class="info-matricula">200220222</td>
+							<td class="info-cpf">123.456.789-10</td>
+							<td class="info-telefone">80028922</td>
+							<td class="info-email">joao@email.org</td>
 						</tr>
 
-						<tr class="paciente" >
+						<tr class="aluno" >
 							<td class="info-nome">Erica</td>
-							<td class="info-peso">200220222</td>
-							<td class="info-altura">123.456.789-10</td>
-							<td class="info-gordura">(79)</td>
-							<td class="info-imc">0</td>
+							<td class="info-matricula">200220222</td>
+							<td class="info-cpf">123.456.789-10</td>
+							<td class="info-telefone">80028922</td>
+							<td class="info-email">erica@email.org</td>
 						</tr>
 
-						<tr class="paciente">
+						<tr class="aluno">
 							<td class="info-nome">Douglas</td>
-							<td class="info-peso">200220222</td>
-							<td class="info-altura">123.456.789-10</td>
-							<td class="info-gordura">(79)</td>
-							<td class="info-imc">0</td>
+							<td class="info-matricula">200220222</td>
+							<td class="info-cpf">123.456.789-10</td>
+							<td class="info-telefone">80028922</td>
+							<td class="info-email">douglas@email.org</td>
 						</tr>
-						<tr class="paciente" >
-							<td class="info-nome">Tatiana</td>
-							<td class="info-peso">200220222</td>
-							<td class="info-altura">123.456.789-10</td>
-							<td class="info-gordura">(79)</td>
-							<td class="info-imc">0</td>
+						<tr class="aluno" >
+							<td class="info-nome">Deivinho</td>
+							<td class="info-matricula">200220222</td>
+							<td class="info-cpf">123.456.789-10</td>
+							<td class="info-telefone">80028922</td>
+							<td class="info-email">deivinho@email.org</td>
 						</tr>
 					</tbody>
 				</table>
@@ -103,19 +103,23 @@
 		            <input id="nome" name="nome" type="text" placeholder="digite o nome do seu aluno" class="campo">
 		        </div>
 		        <div class="grupo">
-		            <label for="peso">Matrícula:</label>
-		            <input id="peso" name="peso" type="text" placeholder="digite a matrícula do seu aluno" class="campo campo-medio">
+		            <label for="matricula">Matrícula:</label>
+		            <input id="matricula" name="matricula" type="text" placeholder="digite a matrícula do seu aluno" class="campo campo-medio">
 		        </div>
 		        <div class="grupo">
-		            <label for="altura">CPF:</label>
-		            <input id="altura" name="altura" type="text" placeholder="digite o cpf do seu aluno" class="campo campo-medio">
+		            <label for="cpf">CPF:</label>
+		            <input id="cpf" name="cpf" type="text" placeholder="digite o cpf do seu aluno" class="campo campo-medio">
 		        </div>
 		        <div class="grupo">
-		            <label for="gordura">Telefone:</label>
-		            <input id="gordura" type="text" placeholder="digite o telefone do seu aluno" class="campo campo-medio">
+		            <label for="telefone">Telefone:</label>
+		            <input id="telefone" name="telefone" type="text" placeholder="digite o telefone do seu aluno" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="email">Email:</label>
+		            <input id="email" name="email" type="text" placeholder="digite o e-mail do seu aluno" class="campo campo-medio">
 		        </div>
 
-		        <button id="adicionar-paciente" class="botao bto-principal">Adicionar e Limpar</button>
+		        <button id="adicionar-aluno" class="botao bto-principal">Adicionar e Limpar</button>
 		    </form>
 		</section>
 

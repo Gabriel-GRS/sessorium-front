@@ -1,64 +1,259 @@
-/* Início estilo Form Login */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  ul,
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  button,
+  input {
+    border: 0;
+  }
+  button:focus,
+  input:focus {
+    border: 0;
+  }
 
-.container__login {
+:root {
+    --green: rgb(65, 182, 163);
+    --blue: #2b6cb0;
+  
+    --white: #ffffff;
+    --white300: #f7fafc;
+  
+    --dark: #1a202c;
+    --input: #e8e8e8;
+}
+ 
+.container {
+    width: 100%;
+    height: 902px;
+    display: flex;
+
+}
+
+.img-container {
+    width: 650px;   
+    height: 902px;
+    background: var(--white300);
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
-.form {
+.login-container {
+    background: var(--white);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+   
 }
-
-.logo__sessorium {
-    height: 280px;
-    width: 270px;
-}
-
-
-.title__item__input {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 600;
-    text-align: left;
-    margin: 2px;
-    color: rgb(65, 182, 182);
-}
-
-.input__item {
-    margin-top: 2px;
-    border: none;
-    background-color: aliceblue;
-    border-radius: 6px;
-    padding-left: 12px;
-    width: 270px;
-    height: 40px;
-    outline: none;
-    font-size: 14px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-.input__button {
-    margin-top: 4px;
-    height: 34px;
-    border-radius: 15px;
-    border: none;
-    font-size: 16px;
-    color: aliceblue;
-    font-weight: 700;
-    background-color: rgb(65, 182, 182);
-}
-
-.checkbox__input {
+.main-container {
+    
+    height: 500px;
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.login-text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.login-title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    color: var(--dark);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--dark);
+}
+
+.login-form input {
+    box-sizing: border-box;
+    width: 350px;
+    height: 50px;
+    border: 1px solid var(--input);
+    border-radius: 5px;
+
+    font-family: 'Lato', sans-serif;;
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
+    line-height: 17px;
+    color: var(--dark);
+    padding: 15px;
+
+}
+
+.checkbox-container {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox-box {
+    display: flex;
+    gap: 10px;
+}
+
+.checkbox {
+    background: var(--white300);
+    border: 1px solid var(--input);
+}
+
+.checkbox-text-1 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--dark);
+}
+
+.checkbox-text-2 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--blue);
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+}
+
+.btn-entrar {
+    padding: 15px;
+    background: var(--green);
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btn-cadastrar {
+    padding: 15px;
+    background: var(--dark);
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.google-logo {
+    width: 15px;
+    height: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+    gap: 5px;
+}
+
+footer p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--dark);
+}
+.blue {
+    color: var(--blue);
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 
-.btn__registrar {
-    margin: 14px;
+@media (max-width: 664px) {
+    .img-container {
+        display: none;
+    }
 }
 
-/* Fim estilo Form Login */
+@media (max-width: 480px) {
+    .img-container {
+        display: none;
+    }
+    .container {
+        align-items: start;
+        margin-top: 40px;
+    }
+    footer {
+        margin-top: 80px;
+    }
+}

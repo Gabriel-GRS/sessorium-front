@@ -1,12 +1,12 @@
-var botaoAdicionar = document.querySelector("#adicionar-paciente");
+let botaoAdicionar = document.querySelector("#adicionar-aluno");
 botaoAdicionar.addEventListener("click", function(event) {
     event.preventDefault();
 
-    var form = document.querySelector("#form-adiciona");
+    let form = document.querySelector("#form-adiciona");
 
-    var paciente = obtemPacienteDoFormulario(form);
-
-    var erros = validaPaciente(paciente);
+    let aluno = obtemAlunoDoFormulario(form);
+ 
+    let erros = validaPaciente(aluno);
 
     if (erros.length > 0) {
         exibeMensagensDeErro(erros);
@@ -14,85 +14,89 @@ botaoAdicionar.addEventListener("click", function(event) {
         return;
     }
 
-    adicionaPacienteNaTabela(paciente);
+    adicionaAlunoNaTabela(aluno);
 
     form.reset();
 
-    var mensagensErro = document.querySelector("#mensagens-erro");
+    let mensagensErro = document.querySelector("#mensagens-erro");
     mensagensErro.innerHTML = "";
 
 });
 
 
-function obtemPacienteDoFormulario(form) {
-
-    var paciente = {
+function obtemAlunoDoFormulario(form) {
+    
+    let aluno = {
         nome: form.nome.value,
-        peso: form.peso.value,
-        altura: form.altura.value,
-        gordura: form.gordura.value,
+        matricula: form.matricula.value,
+        cpf: form.cpf.value,
+        telefone: form.telefone.value,
+        email: form.email.value
     }
 
-    return paciente;
+    return aluno;
 }
 
-function montaTr(paciente) {
-    var pacienteTr = document.createElement("tr");
-    pacienteTr.classList.add("paciente");
+function montaTr(aluno) {
+    let alunoTr = document.createElement("tr");
+    alunoTr.classList.add("aluno");
 
-    pacienteTr.appendChild(montaTd(paciente.nome, "info-nome"));
-    pacienteTr.appendChild(montaTd(paciente.peso, "info-peso"));
-    pacienteTr.appendChild(montaTd(paciente.altura, "info-altura"));
-    pacienteTr.appendChild(montaTd(paciente.gordura, "info-gordura"));
-    pacienteTr.appendChild(montaTd(paciente.imc, "info-imc"));
+    alunoTr.appendChild(montaTd(aluno.nome, "info-nome"));
+    alunoTr.appendChild(montaTd(aluno.matricula, "info-matricula"));
+    alunoTr.appendChild(montaTd(aluno.cpf, "info-cpf"));
+    alunoTr.appendChild(montaTd(aluno.telefone, "info-telefone"));
+    alunoTr.appendChild(montaTd(aluno.email, "info-email"));
 
-    return pacienteTr;
+    return alunoTr;
 }
 
 function montaTd(dado, classe) {
-    var td = document.createElement("td");
+    let td = document.createElement("td");
     td.classList.add(classe);
     td.textContent = dado;
 
     return td;
 }
 
-function validaPaciente(paciente) {
+function validaPaciente(aluno) {
 
-    var erros = [];
+    let erros = [];
 
-    if (paciente.nome.length == 0) {
+    if (aluno.nome.length == 0) {
         erros.push("O nome não pode ser em branco");
     }
 
-    if (paciente.gordura.length == 0) {
+    if (aluno.matricula.length == 0) {
         erros.push("A matrícula não pode ser em branco");
     }
 
-    if (paciente.peso.length == 0) {
+    if (aluno.cpf.length == 0) {
         erros.push("O cpf não pode ser em branco");
     }
 
-    if (paciente.altura.length == 0) {
+    if (aluno.telefone.length == 0) {
         erros.push("O telefone não pode ser em branco");
+    }
+    if (aluno.email.length == 0) {
+        erros.push("O e-mail não pode ser em branco");
     }
 
     return erros;
 }
 
 function exibeMensagensDeErro(erros) {
-    var ul = document.querySelector("#mensagens-erro");
+    let ul = document.querySelector("#mensagens-erro");
     ul.innerHTML = "";
 
     erros.forEach(function(erro) {
-        var li = document.createElement("li");
+        let li = document.createElement("li");
         li.textContent = erro;
         ul.appendChild(li);
     });
 }
 
-function adicionaPacienteNaTabela(paciente) {
-    var pacienteTr = montaTr(paciente);
-    var tabela = document.querySelector("#tabela-pacientes");
-    tabela.appendChild(pacienteTr);
+function adicionaAlunoNaTabela(aluno) {
+    let alunoTr = montaTr(aluno);
+    let tabela = document.querySelector("#tabela-alunos");
+    tabela.appendChild(alunoTr);
 }

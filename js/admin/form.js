@@ -99,4 +99,5 @@ function adicionaAlunoNaTabela(aluno) {
     let alunoTr = montaTr(aluno);
     let tabela = document.querySelector("#tabela-alunos");
     tabela.appendChild(alunoTr);
+    alert("Aluno Cadastrado!")
 }

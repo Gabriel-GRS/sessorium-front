@@ -1,12 +1,14 @@
 let botaoAdicionar = document.querySelector("#adicionar-aluno");
-botaoAdicionar.addEventListener("click", function(event) {
+
+
+botaoAdicionar.addEventListener("click", (event) => {
     event.preventDefault();
 
     let form = document.querySelector("#form-adiciona");
 
     let aluno = obtemAlunoDoFormulario(form);
  
-    let erros = validaPaciente(aluno);
+    let erros = validaAluno(aluno);
 
     if (erros.length > 0) {
         exibeMensagensDeErro(erros);
@@ -58,7 +60,7 @@ function montaTd(dado, classe) {
     return td;
 }
 
-function validaPaciente(aluno) {
+function validaAluno(aluno) {
 
     let erros = [];
 
@@ -70,8 +72,8 @@ function validaPaciente(aluno) {
         erros.push("A matrícula não pode ser em branco");
     }
 
-    if (aluno.cpf.length == 0) {
-        erros.push("O cpf não pode ser em branco");
+    if (aluno.cpf.length == 0 || aluno.cpf.length < 14) {
+        erros.push("O cpf é inválido");
     }
 
     if (aluno.telefone.length == 0) {

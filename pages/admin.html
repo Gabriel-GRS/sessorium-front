@@ -30,7 +30,7 @@
 					<a class="menu-lateral__link  menu-lateral__link--suporte" href="./fale-conosco.html">Fale Conosco</a>
 				</li>
 				<li>
-					<a class="menu-lateral__link" href="./admin.html">Painel Admin</a>
+					<a class="menu-lateral__link" href="./admin.html">Cadastro Aluno</a>
 				</li>
 				<li>
 					<a class="menu-lateral__link" href="./login.html">Sair</a>
@@ -39,7 +39,7 @@
 		</aside>
 		<main>
 			<section class="container">
-				<h2>Painel Admin</h2>
+				<h2>Cadastro de Aluno</h2>
 				<table>
 					<thead class="cabecalho__tabela">
 						<tr>
@@ -51,7 +51,7 @@
 						</tr>
 					</thead>
 					<tbody id="tabela-alunos">
-						<tr class="aluno" id="primeiro-paciente">
+						<tr class="aluno">
 							<td class="info-nome">Paulo</td>
 							<td class="info-matricula">200220222</td>
 							<td class="info-cpf">123.456.789-10</td>
@@ -74,21 +74,6 @@
 							<td class="info-telefone">80028922</td>
 							<td class="info-email">erica@email.org</td>
 						</tr>
-
-						<tr class="aluno">
-							<td class="info-nome">Douglas</td>
-							<td class="info-matricula">200220222</td>
-							<td class="info-cpf">123.456.789-10</td>
-							<td class="info-telefone">80028922</td>
-							<td class="info-email">douglas@email.org</td>
-						</tr>
-						<tr class="aluno" >
-							<td class="info-nome">Deivinho</td>
-							<td class="info-matricula">200220222</td>
-							<td class="info-cpf">123.456.789-10</td>
-							<td class="info-telefone">80028922</td>
-							<td class="info-email">deivinho@email.org</td>
-						</tr>
 					</tbody>
 				</table>
 			</section>
@@ -108,7 +93,7 @@
 		        </div>
 		        <div class="grupo">
 		            <label for="cpf">CPF:</label>
-		            <input id="cpf" name="cpf" type="text" placeholder="digite o cpf do seu aluno" class="campo campo-medio">
+		            <input id="cpf" name="cpf" type="text" placeholder="digite o cpf do seu aluno" autocomplete="off" maxlength="14" class="campo campo-medio">
 		        </div>
 		        <div class="grupo">
 		            <label for="telefone">Telefone:</label>
@@ -118,11 +103,14 @@
 		            <label for="email">Email:</label>
 		            <input id="email" name="email" type="text" placeholder="digite o e-mail do seu aluno" class="campo campo-medio">
 		        </div>
-
-		        <button id="adicionar-aluno" class="botao bto-principal">Adicionar e Limpar</button>
+				<div class="btns-form">
+					<button id="adicionar-aluno" class="botao bto-principal">Salvar</button>
+					<button id="adicionar-aluno" class="botao bto-principal">Limpar</button>
+				</div>
 		    </form>
 		</section>
 
-		<script src="../js/admin/form.js" ></script>
+		<script src="../js/cadastroAluno.js" ></script>
+		<script src="../js/cpfMask.js"></script>
 	</body>
 </html>

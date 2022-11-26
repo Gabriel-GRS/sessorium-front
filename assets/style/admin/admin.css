@@ -117,9 +117,14 @@ button{
     clear: both;
     margin: 10px 0px;
     font-size: 16px;
+    margin-left: 5px;
 
 }
 
+.btns-form {
+    display: flex;
+
+}
 
 button[disabled=disabled], button:disabled {
     background-color: gray;
@@ -127,17 +132,12 @@ button[disabled=disabled], button:disabled {
 
 }
 
-.adicionar-paciente{
-    margin-top: 30px;
-}
 
 .campo-invalido{
 	border: 1px solid red;
 }
 
-.paciente-invalido {
-	background-color: lightcoral;
-}
+
 
 #mensagens-erro {
 	color: red;

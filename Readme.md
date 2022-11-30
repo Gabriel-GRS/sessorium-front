@@ -2,7 +2,7 @@
 > Status: Concluded ✅
 
 ## Finalidade:
-- Sessorium foi feito para uma prova da disciplina de Desenvolvimento Web.
+- Sessorium foi feito para uma prova da faculdade na disciplina de Desenvolvimento Web.
 
 ## Tecnologias Usadas:
 
@@ -15,6 +15,6 @@
 
 ## Como rodar a aplicação:
 
-1) Clone o respositório;
+1) Clone o respositório com "git clone";
 2) Entre no pasta "pages";
 3) Abra o arquivo "login.html" com o navegador.
